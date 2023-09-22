@@ -1,0 +1,182 @@
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    .nav-contain
+    {
+        background-color: azure;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        height: 500px;
+        transform: translateX(100%);
+        transition: transform linear 0.5s;
+        box-shadow: -6px 13px 19px -17px #000;
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .nav-menu
+    {
+        display: inline-flex;
+    }
+    .input-nav:checked ~.nav-contain
+    {
+        transform: translateX(0);
+    }
+    .input-nav:checked ~.nav-overlay
+    {
+        display: block;
+        animation: opacity 0.5s linear;
+    }
+    .login-img-contain
+    {
+        display: none;
+    }
+    .login-form
+    {
+        width: 100%;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .info-4-contain
+    {
+        width: 29%;
+    }
+    .title-content>h1 {
+        margin: 0 4px;
+        font-size: 24px;
+    }
+    .doctor-tag{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 740px)
+{
+    .nav-contain
+    {
+        background-color: azure;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        height: 500px;
+        transform: translateX(102%);
+        transition: transform linear 0.5s;
+        box-shadow: -6px 13px 19px -17px #000;
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .nav-menu
+    {
+        display: inline-flex;
+    }
+    .input-nav:checked ~.nav-contain
+    {
+        transform: translateX(0);
+    }
+    .input-nav:checked ~.nav-overlay
+    {
+        display: block;
+        animation: opacity 0.5s linear;
+    }
+    .login-img-contain
+    {
+        display: none;
+    }
+    .login-form
+    {
+        width: 100%;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .title-content>h1 {
+        margin: 0 4px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-1
+    { 
+        width: 100%;
+    }
+    .about-2
+    { 
+        width: 100%;
+    }
+    .about-3
+    { 
+        width: 100%;
+    }
+    .info
+    {
+        flex-direction: column;
+    }
+    .info-section
+    {
+        width: 100%;
+    }
+    .info-img
+    {
+        width: 100%;
+    }
+    .info-4
+    {
+        flex-direction: column;
+    }
+    .info-4-contain
+    {
+        width: 100%;
+    }
+    .info-heading, 
+    .info-4-heading
+    {
+        font-size: 24px;
+    }
+    .doctor-items
+    {
+        width: 100%;
+    }
+    .practise-list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .practise-items{
+        width: 100%;
+    }
+    .practise-let{
+        font-size: 16px;
+        width: 50%;
+    }
+    .practise-img-list {
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .practise-img-list>img {
+        width: 50%;
+    }
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
